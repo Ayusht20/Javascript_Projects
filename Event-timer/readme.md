@@ -1,0 +1,1 @@
+⏳ Developed an Event Timer & Task Manager using HTML, CSS, and JavaScript that enables users to schedule tasks with real-time countdown timers, automatic task removal, and persistent storage using localStorage. Implemented a popup-based input system and dynamic UI updates for enhanced user experience.

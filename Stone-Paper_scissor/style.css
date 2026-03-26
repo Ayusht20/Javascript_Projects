@@ -1,0 +1,153 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body
+{
+    background-color: #DCED31;
+}
+h1{
+    background-color: #363537;
+    color: #0CCE6B;
+    height: 5rem;
+    line-height: 5rem;
+    
+}
+.choice
+{
+    height: 185px;
+    width: 185px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.choice:hover
+{
+    transform: scale(1.21);
+    /* border-radius: 50%; */
+    box-shadow: 0 0 50px 10px #F46786;
+    /* background-color: #F46786; */
+    cursor: pointer;
+    
+}
+.rock
+{
+    border-radius: 50%;
+}
+.choices
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+    gap: 3rem;
+}
+img
+{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    /* justify-self: center; */
+
+}
+.score-board
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #990B29;
+    font-style: italic;
+    gap: 5rem;
+    /* margin-bottom: 5rem; */
+    
+}
+.user-score ,.comp-score
+{
+    height: 150px;
+    width: 150px;
+    font-size: 6rem;
+    font-weight: bold;
+    color:#033A1E;
+     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-style: normal;
+    border: 10px solid  #07743B;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2); 
+    
+}
+.fade-in
+{
+    animation: fadeIn 0.5s ease-in ;
+    
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the scores */
+.user-score, .comp-score {
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.score-updated {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.msg-container
+{
+    margin-top: 4rem;
+}
+#msg
+{
+    
+    background-color: #F3A87C;
+    color: #990B29;
+    display: inline;
+    font-size: 3rem;
+    padding: 1.5rem 3rem; 
+    border-radius: 1rem;
+}
+/* Add spinner styles */
+.loading-spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #0CCE6B;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+    display: none; /* Initially hidden */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Positioning the spinner in the message container */
+.msg-container {
+    margin-top: 4rem;
+    position: relative;
+    text-align: center;
+}
+/* .loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */

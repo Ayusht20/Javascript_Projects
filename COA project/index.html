@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OR Gate Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OR Gate Visualization</h1>
+        <hr>
+        <div class="input-group">
+            <label for="input1">Input 1 (0 or 1): </label>
+            <input type="number" id="input1" min="0" max="1">
+        </div>
+        <div class="input-group">
+            <label for="input2">Input 2 (0 or 1): </label>
+            <input type="number" id="input2" min="0" max="1">
+        </div>
+        <button id="computeBtn" class="button-87">Compute OR</button>
+        <div class="result">
+            <p>Output: <span id="output">-</span></p>
+            <div class="info">
+                <button onclick="location.href='info.html' " class="button-87">Information!</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

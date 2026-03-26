@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense-Tracker!</title>
+</head>
+<body>
+    <div class="msg"></div>
+    <div class="container" >
+        <div class="input-group">
+    <h1>Track Your Expense!</h1>
+    <input type="text" id="expenseName" placeholder="Expense Name!">
+    <br>
+    <input type="text" id="expenseAmt" placeholder="Expense Amount!">
+    <br>
+    <button class="expense">Add Expense!</button>
+    <!-- <button class="list">Show! Expense!</button> -->
+    <div class="expense">
+        <!-- <h3>Expense List</h3> -->
+        <h1 id="total-amount">Total Expense:0</h1>
+        <select id="expense-list" name="expense-list">
+            <option selected disabled>Expense-list</option>
+        </select> 
+    </div>
+   
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

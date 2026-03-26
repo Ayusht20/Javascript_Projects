@@ -1,0 +1,1 @@
+🎨 A dynamic Background Color Changer built with JavaScript that generates random hex color codes and updates the UI instantly on user interaction.

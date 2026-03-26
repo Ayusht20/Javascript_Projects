@@ -1,0 +1,2 @@
+📖 Developed a Dictionary Web Application using HTML, CSS, and JavaScript that integrates external APIs to fetch real-time word meanings, examples, phonetics, synonyms, and antonyms..
+Implemented live search suggestions, error handling, and a responsive user interface for enhanced user experience!!
